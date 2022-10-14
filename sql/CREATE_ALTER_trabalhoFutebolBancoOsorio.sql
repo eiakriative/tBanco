@@ -13,33 +13,32 @@ CREATE DATABASE Projeto_trabalho_campfutebol;
 
 USE Projeto_trabalho_campfutebol;
 
+CREATE TABLE Clube (
+  codigoClube INTEGER NOT NULL,
+  codigoEstadio INTEGER NOT NULL,
+  nome varchar(100) NOT NULL,
+  Jogos INTEGER NOT NULL,
+  PRIMARY KEY (codigoClube)
+);
+
 CREATE TABLE Jogador (
   nomeJogador varchar(255) NOT NULL,
   posicao varchar(50) NOT NULL,
-  gols int(11) DEFAULT NULL,  
+  gols INTEGER DEFAULT NULL,  
   datanascimento DATE NOT NULL,
   datacontratacao DATE NOT NULL,
-  idade int NOT NULL,
+  idade INTEGER NOT NULL,
   peso FLOAT NOT NULL,
   altura FLOAT NOT NULL,
-  codigoClube int NOT NULL,
+  codigoClube INTEGER NOT NULL,
   PRIMARY KEY (nomeJogador, codigoClube),
   KEY FK_Jogador (codigoClube),
   CONSTRAINT FK_Jogador FOREIGN KEY (codigoClube) REFERENCES Clube (codigoClube)
 );
 
-
-CREATE TABLE Clube (
-  codigoClube int NOT NULL AUTO_INCREMENT,
-  codigoEstadio INT NOT NULL,
-  nome varchar(100) NOT NULL,
-  Jogos int(11) NOT NULL,
-  PRIMARY KEY (codigoClube)
-);
-
 CREATE TABLE Estadio (
-  codigoEstadio INT NOT NULL,
-  codigoClube int NOT NULL,
+  codigoEstadio INTEGER NOT NULL,
+  codigoClube INTEGER NOT NULL,
   nome VARCHAR(255) NOT null,
   cidade VARCHAR(255) NOT NULL,
   estado char(2) NOT NULL,
@@ -47,11 +46,19 @@ CREATE TABLE Estadio (
   KEY FK_Estadio (codigoClube),
   CONSTRAINT FK_Estadio FOREIGN KEY (codigoClube) REFERENCES Clube (codigoClube)
 );
-
-DROP TABLE Clube;
 DROP TABLE Estadio;
 DROP TABLE Jogador;
+DROP TABLE Clube;
+DROP TABLE Partida;
+
 
 SELECT * FROM Clube;
 SELECT * FROM Estadio;
 SELECT * FROM Jogador;
+SELECT * FROM Partida;
+
+
+
+
+
+
