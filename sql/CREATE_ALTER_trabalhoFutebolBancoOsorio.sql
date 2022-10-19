@@ -10,7 +10,6 @@
 */
 
 CREATE DATABASE Projeto_trabalho_campfutebol;
-
 USE Projeto_trabalho_campfutebol;
 
 CREATE TABLE Clube (
@@ -22,21 +21,21 @@ CREATE TABLE Clube (
 CREATE TABLE Jogador (
   nomeJogador varchar(255) NOT NULL,
   codigoClube INTEGER NOT NULL,
-  golsPorPartida INTEGER NOT NULL UNIQUE,
   posicao varchar(50) NOT NULL,
   datanascimento DATE NOT NULL,
   datacontratacao DATE NOT NULL,
   idade INTEGER NOT NULL,
-  peso FLOAT NOT NULL,
-  altura FLOAT NOT NULL,
-  PRIMARY KEY (nomeJogador, codigoClube, golsPorPartida),
+  peso DOUBLE NOT NULL,
+  altura DOUBLE NOT NULL,
+  PRIMARY KEY (nomeJogador, codigoClube),
   FOREIGN KEY (codigoClube) REFERENCES Clube (codigoClube)
 );
 
 CREATE TABLE Estadio (
   codigoEstadio INTEGER NOT NULL,
   codigoPartida INTEGER NOT NULL,
-  nome VARCHAR(255) NOT null,
+  nome VARCHAR(255) NOT NULL,
+  capacidade DOUBLE NOT NULL,
   cidade VARCHAR(255) NOT NULL,
   estado char(2) NOT NULL,
   PRIMARY KEY (codigoEstadio)
@@ -53,28 +52,16 @@ CREATE TABLE Partida (
   FOREIGN KEY (codigoEstadio) REFERENCES Estadio (codigoEstadio)
 );
 
-CREATE TABLE Partida_golsJogador(
+CREATE TABLE Partida_golsJogador( 
   codigoPartida INTEGER NOT NULL,
   golsPorPartida INTEGER NOT NULL,
-  nomeJogador varchar(255) NOT NULL,
+  nomeJogador VARCHAR(255) NOT NULL,
   codigoClube INTEGER NOT NULL,
-  PRIMARY KEY (codigoPartida, golsPorPartida, nomeJogador, codigoClube),
-  FOREIGN KEY (codigoPartida) REFERENCES Partida (codigoPartida),
-  FOREIGN KEY (golsPorPartida) REFERENCES Jogador (golsPorPartida),
-  FOREIGN KEY (nomeJogador) REFERENCES Jogador (nomeJogador),
-  FOREIGN KEY (codigoClube) REFERENCES Clube (codigoClube)
-);
-
-CREATE TABLE Partida_golsJogador(
-  codigoPartida INTEGER NOT NULL,
-  golsPorPartida INTEGER NOT NULL,
-  nomeJogador varchar(255) NOT NULL,
-  codigoClube INTEGER NOT NULL,
-  PRIMARY KEY (codigoPartida, golsPorPartida, nomeJogador, codigoClube),
-  FOREIGN KEY (codigoPartida) REFERENCES Partida (codigoPartida),
-  FOREIGN KEY (golsPorPartida) REFERENCES Jogador (golsPorPartida),
-  FOREIGN KEY (nomeJogador) REFERENCES Jogador (nomeJogador),
-  FOREIGN KEY (codigoClube) REFERENCES Clube (codigoClube)
+  FOREIGN KEY (codigoPartida) REFERENCES Partida(codigoPartida),
+  -- FOREIGN KEY (golsPorPartida) REFERENCES Jogador(golsPorPartida),
+  -- CONSTRAINT FK_golsPorPartida FOREIGN KEY (golsPorPartida) REFERENCES Jogador(golsPorPartida),
+  FOREIGN KEY (nomeJogador) REFERENCES Jogador(nomeJogador),
+  FOREIGN KEY (codigoClube) REFERENCES Clube(codigoClube)
 );
 
 -- DROPar tabela se necessário
@@ -83,7 +70,6 @@ DROP TABLE Jogador;
 DROP TABLE Clube;
 DROP TABLE Partida;
 DROP TABLE Partida_golsJogador;
-DROP TABLE PartidaPorClube;
 
 
 -- Select das tabela se necessário
