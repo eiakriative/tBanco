@@ -19,7 +19,7 @@ Repositorio totalmente voltado para armazenamento do script e modelo conceitual 
 
 ## 👨🏻‍🏫 Professora
 
-### Osmary Camila Bortoncello Glober (Mary)
+### Osmary Camila Bortoncello Glober (Mary) ([@marycamila184](https://github.com/marycamila184))
 
 ## 🚀 Aluno envolvido
 
