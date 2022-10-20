@@ -5,7 +5,7 @@
 ## SEDE / Curso: BSI - Osório | Noite                  ##
 ## DISCIPLINA: BANCO DE DADOS                          ##
 ## PROFESSORA: Osmary Camila Bortoncello Glober (Mary) ##
-## TRABALHO / PROJETO - 1 BIMESTRE                     ##
+## TRABALHO / PROJETO                                  ##
 #########################################################
 */
 
@@ -13,7 +13,7 @@ CREATE DATABASE Projeto_trabalho_campfutebol;
 USE Projeto_trabalho_campfutebol;
 
 CREATE TABLE Clube (
-  codigoClube INTEGER NOT NULL,
+  codigoClube INTEGER NOT NULL AUTO_INCREMENT,
   nome varchar(100) NOT NULL,
   PRIMARY KEY (codigoClube)
 );
@@ -22,8 +22,8 @@ CREATE TABLE Jogador (
   nomeJogador varchar(255) NOT NULL,
   codigoClube INTEGER NOT NULL,
   posicao varchar(50) NOT NULL,
-  datanascimento DATE NOT NULL,
-  datacontratacao DATE NOT NULL,
+  datanascimento DATETIME NOT NULL,
+  datacontratacao DATETIME NOT NULL,
   idade INTEGER NOT NULL,
   peso DOUBLE NOT NULL,
   altura DOUBLE NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE Jogador (
 );
 
 CREATE TABLE Estadio (
-  codigoEstadio INTEGER NOT NULL,
+  codigoEstadio INTEGER NOT NULL AUTO_INCREMENT,
   codigoPartida INTEGER NOT NULL,
   nome VARCHAR(255) NOT NULL,
   capacidade DOUBLE NOT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE Estadio (
 );
 
 CREATE TABLE Partida (
-  codigoPartida INTEGER NOT NULL,
+  codigoPartida INTEGER NOT NULL AUTO_INCREMENT,
   codigoEstadio INTEGER NOT NULL,
   codigoClube1 INTEGER NOT NULL, 
   codigoClube2 INTEGER NOT NULL,

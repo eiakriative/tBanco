@@ -5,7 +5,7 @@
 ## SEDE / Curso: BSI - Osório | Noite                  ##
 ## DISCIPLINA: BANCO DE DADOS                          ##
 ## PROFESSORA: Osmary Camila Bortoncello Glober (Mary) ##
-## TRABALHO / PROJETO - 1 BIMESTRE                     ##
+## TRABALHO / PROJETO                                  ##
 #########################################################
 */
 
@@ -20,17 +20,18 @@ INSERT INTO Clube (nome) VALUES
 	('Futeba FC');
 
 INSERT INTO Jogador (nomeJogador, posicao, datanascimento, datacontratacao, idade, peso, altura, codigoClube) VALUES
-	('Lucas', 'Meia', '1992-04-22', '2022-03-01', 17, 60.0, 1.5, 1),
-	('Luciano', 'Atacante', '1996-04-22', '2022-03-01', 18, 60.0, 1.8, 1),
-	('Marcos', 'Goleiro', '2000-04-22', '2022-03-01', 16, 65.0, 1.3, 2),
-	('Bruno', 'Atacante', '1997-04-22', '2022-03-01', 18, 60.0, 1.9, 2),
-	('Alfredo', 'Goleiro', '2000-04-22', '2022-03-01', 16, 65.0, 1.3, 3),
-	('Jonas', 'Atacante', '1997-04-22', '2022-03-01', 17, 60.0, 1.9, 3),
-	('Hugo', 'Goleiro', '2000-04-22', '2022-03-01', 16, 65.0, 1.3, 4),
-	('Igor', 'Atacante', '1997-04-22', '2022-03-01', 18, 60.0, 1.9, 4);
+	('Lucas', 'Meia', '1992-04-22', '2022-03-01 12:10:05', 17, 60.0, 1.5, 1),
+	('Luciano', 'Atacante', '1996-04-22', '2022-03-01: 13:02:20', 18, 60.0, 1.8, 1),
+	('Marcos', 'Goleiro', '2000-04-22', '2022-03-01 : 15:04:12', 16, 65.0, 1.3, 2),
+	('Bruno', 'Atacante', '1997-04-22', '2022-03-01: 17:00:59', 18, 60.0, 1.9, 2),
+	('Alfredo', 'Goleiro', '2000-04-22', '2022-03-01 13:12:13', 16, 65.0, 1.3, 3),
+	('Jonas', 'Atacante', '1997-04-22', '2022-03-01 12:14:12', 17, 60.0, 1.9, 3),
+	('Hugo', 'Goleiro', '2000-04-22', '2022-03-01 14:02:12', 16, 65.0, 1.3, 4),
+	('Igor', 'Atacante', '1997-04-22', '2022-03-01 13:12:12', 18, 60.0, 1.9, 4);
+	
 
 INSERT INTO Estadio (codigoEstadio, codigoPartida, nome, capacidade, cidade, estado) VALUES
-	(1, 1, 'Estadio Francisco Muraro', 3.000, 'Curitiba', 'PR'),
+	(1, 1, 'Estadio Francisco Muraro', 3.200, 'Curitiba', 'PR'),
 	(2, 2, 'Estadio Durival Britto e Silva - Vila Capanema', 20.083, 'Curitiba', 'PR'),
 	(3, 3, 'Estadio Regional Willie Davids', 20.000, 'Maringa', 'PR'),
 	(4, 4, 'Estadio Germano Kruger', 10.632, 'Ponta Grossa', 'PR'),
