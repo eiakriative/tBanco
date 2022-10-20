@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-20T14:47:34.093Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="vIE32Ll1bp8nX9uXMrL1" version="20.4.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-10-20T14:49:18.772Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="-5r_TQz2tBbxs-1nPvUm" version="20.4.2" type="github" pages="2">
   <diagram id="-6PNWrwhY_0aAxeJvWDd" name="modeloconceitualFutebol">
-    <mxGraphModel dx="1020" dy="536" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F1FAEE" math="0" shadow="0">
+    <mxGraphModel dx="1156" dy="625" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F1FAEE" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -36,13 +36,10 @@
           <mxGeometry x="152" y="112" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8zsah-cUSWj-YQ_bdB5u-18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;labelBackgroundColor=#F1FAEE;strokeColor=#457B9D;fontColor=#1D3557;curved=1;" parent="1" source="8zsah-cUSWj-YQ_bdB5u-8" target="8zsah-cUSWj-YQ_bdB5u-9" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8zsah-cUSWj-YQ_bdB5u-19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;labelBackgroundColor=#F1FAEE;strokeColor=#457B9D;fontColor=#1D3557;curved=1;" parent="1" source="8zsah-cUSWj-YQ_bdB5u-8" target="8zsah-cUSWj-YQ_bdB5u-11" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="462" y="192" />
-              <mxPoint x="572" y="192" />
+              <mxPoint x="452" y="192" />
+              <mxPoint x="595" y="192" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -98,10 +95,7 @@
           <mxGeometry x="402" y="222" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8zsah-cUSWj-YQ_bdB5u-9" value="&lt;u&gt;nomeJogador&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;glass=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
-          <mxGeometry x="382" y="122" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="8zsah-cUSWj-YQ_bdB5u-11" value="&lt;u&gt;golsPorPartida&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;glass=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
-          <mxGeometry x="512" y="122" width="100" height="40" as="geometry" />
+          <mxGeometry x="567" y="105" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8zsah-cUSWj-YQ_bdB5u-12" value="posicao" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;glass=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
           <mxGeometry x="642" y="152" width="100" height="40" as="geometry" />
@@ -218,7 +212,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="EDaduzlbNOUrJJkYrL8n" name="modelologico">
-    <mxGraphModel dx="1020" dy="536" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="972" dy="536" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
